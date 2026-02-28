@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hoil.css">
+</head>
+<body>
+     <!-- 🎥 Background Video -->
+       <video autoplay muted loop>
+            <source src="/hoil/hoil.mp4" type="video/mp4">
+       </video>
+    <header>
+        <h1>🌈 Happy Holi 🎉</h1>
+        <div class="countdown" id="countdown"></div>
+        <button class="btn" onclick="toggleMusic()">🎵 Music</button>
+        <button class="btn" onclick="shareWhatsApp()">📤 Share</button>
+    </header>
 
+    <main>
+       <!-- 📸 Gallery -->
+        <section class="gallery" id="gallery">
+            <img src="/hoil/hoil1.jpeg">
+            <img src="/hoil/hoil2.jpeg">
+        </section>
+
+        <!-- 🔐 Admin Panel -->
+        <div class="admin">
+            <h2>Admin Panel</h2>
+            <input type="text" id="imgURL" placeholder="Paste Image URL">
+            <button class="btn" onclick="addImage()">Add Image</button>
+       </div>
+
+         <!-- 🎮 Mini Game -->
+        <h2>🎮 Catch The Colors Game</h2>
+            <div id="gameArea"></div>
+            <div id="score">Score: 0</div>
+
+        <audio id="music" src="/hoil/hoil.mp3"></audio>
+    </main>
+    <footer>
+        <div class="copy">
+           <p> &copy; 2026 Made by Sachin | All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="hoil.js"></script>
+</body>
+</html>
